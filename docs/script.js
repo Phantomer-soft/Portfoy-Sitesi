@@ -1,4 +1,4 @@
-// Mobil Menü Toggle (Ekstra olarak eklenebilir)
+
 document.addEventListener("DOMContentLoaded", () => {
   // Proje kartlarına hover efekti
   const projectCards = document.querySelectorAll(".project-card");
@@ -30,7 +30,7 @@ function smoothScroll(target) {
     duration: 1.5, // Animasyon süresi (saniye)
     scrollTo: {
       y: target, // Hedef element veya pixel değeri
-      offsetY: 70, // Sabit navbar varsa üst boşluk (opsiyonel)
+      offsetY: 70, // Sabit navbar varsa üst boşluk 
     },
     ease: "power2.inOut", // Easing efekti (daha doğal hareket)
   });
