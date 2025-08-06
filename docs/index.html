@@ -1,10 +1,190 @@
-<html>
-<head>
-    <title>Portfolyo</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-    <h1>Hoş Geldiniz!</h1>
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Şerafettin Küçüktaş | FullStack Developer</title>
+    <meta
+      name="description"
+      content="HTML, CSS VE JS ile web sayfaları geliştiriyorum. JAVA ve C# ile farklı çözümler üretiyorum."
+    />
+    <!-- Fontlar -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav>
+      <div class="container">
+        <a href="logo" class="logo">Şerafettin Küçüktaş</a>
+        <ul>
+          <li><a href="#about">Hakkımda</a></li>
+          <li><a href="#skills">Yetenekler</a></li>
+          <li><a href="#projects">Projeler</a></li>
+          <li><a href="#contact" class="btn-nav">İletişim</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <h1>Merhaba, ben <span>Şerafettin</span></h1>
+            <p class="subtitle">FullStack Developer</p>
+            <button class="btn" onclick="smoothScroll('#projects')">
+              Projelerimi Gör
+            </button>
+            <a
+              href="assests/cv-serafettin-kucuktas.pdf"
+              download
+              class="btn btn-outline"
+              >CV İndir (PDF)</a
+            >
+          </div>
+          <div class="hero-image">
+            <img
+              src="assests/profil-foto.jpg"
+              alt="Şerafettin Küçüktaş"
+              class="profile-photo"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hakkımda -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">Ben Kimim?</h2>
+        <p class="section-text">
+          Bilgisayar Mühendisliği 3. Sınıf öğrencisi olup kodlamaya tutkuyla
+          bağlıyım.Yeni teknolojileri öğrenmek ve kendimi daha da geliştirmek
+          için çalışmaya devam ediyorum.
+        </p>
+      </div>
+    </section>
+
+    <!-- Yetenekler -->
+    <section id="skills" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Yetenekler</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fab fa-react"></i>
+            <h3>React</h3>
+            <p>Giriş düzeyi</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-js"></i>
+            <h3>JavaScript</h3>
+            <p>Giriş düzeyi</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-figma"></i>
+            <h3>Figma</h3>
+            <p>UI/UX tasarım</p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-java"></i>
+            <h3>Java</h3>
+            <p>
+              +1 yıl <br />
+              Uygulama Geliştirme
+            </p>
+          </div>
+          <div class="skill-card">
+            <i class="fab fa-c"></i>
+            <h3>C#</h3>
+            <p>+1 yıl <br /></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projeler -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Projelerim</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img
+              src="assests/ticaretsitesi.webp"
+              alt="E-Ticaret Projesi"
+              class="project-image"
+            />
+            <div class="project-overlay">
+              <h3>E-Ticaret Sitesi</h3>
+              <p>React & Node.js ile geliştirildi</p>
+              <a href="#" class="btn btn-small">Detaylar</a>
+            </div>
+          </div>
+          <div class="project-card">
+            <img
+              src="assests/project-1.png"
+              alt="Portfolyo Sitesi"
+              class="project-image"
+            />
+            <div class="project-overlay">
+              <h3>Portfolyo Yönetimi</h3>
+              <p>HTML,CSS & JavaScript ile geliştirildi</p>
+              <a href="#" class="btn btn-small">Detaylar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- İletişim -->
+    <section id="contact" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">İletişim</h2>
+        <div class="contact-form">
+          <form>
+            <input type="text" placeholder="Adınız" required />
+            <input type="email" placeholder="E-posta" required />
+            <textarea placeholder="Mesajınız..." required></textarea>
+            <button type="submit" class="btn">Gönder</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>© 2025 Şerafettin Küçüktaş. Tüm hakları saklıdır.</p>
+        <div class="social-links">
+          <a
+            target="_blank"
+            href="https://tr.linkedin.com/in/şerafettin-küçüktaş-5ba1281a7"
+            ><i class="fab fa-linkedin"></i
+          ></a>
+          <a target="_blank" href="https://github.com/Phantomer-soft"
+            ><i class="fab fa-github"></i
+          ></a>
+          <a
+            target="_blank"
+            href="https://x.com/SKucuktasS?t=BzQrBXokf-B4ESFujhSuHQ&s=08"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
